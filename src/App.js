@@ -8,6 +8,7 @@ import './assets/css/font-awesome-pro.css';
 import './assets/css/spacing.css';
 import './assets/css/custom-animation.css';
 import './assets/css/main.css';
+import Home from './pages/Home';
 
 function loadScript(src) {
   return new Promise((resolve, reject) => {
@@ -57,7 +58,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* Tu código JSX aquí */}
+      <Home />
     </div>
   );
 }
