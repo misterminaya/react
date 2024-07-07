@@ -14,9 +14,9 @@ function loadScript(src) {
   return new Promise((resolve, reject) => {
     const script = document.createElement('script');
     script.src = src;
-    script.onload = resolve;
-    script.onerror = reject;
-    document.body.appendChild(script);
+    script.onload = () => resolve();
+    script.onerror = () => reject(new Error(`Script load error for ${src}`));
+    document.head.appendChild(script);
   });
 }
 
@@ -48,6 +48,7 @@ function App() {
         await loadScript('/assets/js/webgl.js');
         await loadScript('/assets/js/main.js');
         await loadScript('/assets/js/tp-cursor.js');
+        await loadScript('/assets/js/test.js');
       } catch (error) {
         console.error('Error loading script:', error);
       }
