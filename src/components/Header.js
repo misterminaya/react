@@ -15,13 +15,15 @@ const Header = () => {
               </div>
             </div>
             <div className="col-xl-8 col-lg-9 d-none d-xl-block">
-              <nav className="tp-main-menu-content">
-                <ul>
-                  <li><a href="index.html">INICIO</a></li>
-                  <li><a href="#">NOSOTROS</a></li>
-                  <li><a href="portfolio-random-1.html">PORTAFOLIO</a></li>
-                </ul>
-              </nav>
+              <div className="tp-header-menu header-main-menu text-center">
+                <nav className="tp-main-menu-content">
+                  <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="#">NOSOTROS</a></li>
+                    <li><a href="portfolio-random-1.html">PORTAFOLIO</a></li>
+                  </ul>
+                </nav>
+              </div>
             </div>
             <div className="col-xl-2 col-lg col-6">
               <div className="tp-header-bar text-end">

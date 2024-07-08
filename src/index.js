@@ -1,5 +1,7 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';  // Si necesitas los componentes de JS de Bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css'; // Importa los estilos de Bootstrap
+import 'bootstrap/dist/js/bootstrap.bundle.min'; // Importa el bundle de Bootstrap, que incluye Popper.js y otros componentes de JavaScript
+import $ from 'jquery';
+import './assets/js/vendor/jquery.js';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
